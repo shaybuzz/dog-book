@@ -3,9 +3,7 @@ import './App.css';
 import {
   HashRouter as Router,
   Switch,
-  Route,
-  Link
-} from "react-router-dom";
+  Route} from "react-router-dom";
 import HomePage from './components/HomePage';
 import MainPage from './components/MainPage';
 

@@ -2,8 +2,7 @@ import React from 'react';
 import {
   HashRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import NavigationComp from './NavigationComp';
 import AboutPage from './AboutPage';
