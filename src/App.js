@@ -1,6 +1,8 @@
 import React from 'react';
+
 import logo from './logo.svg';
 import './App.css';
+import HomePage from './components/HomePage';
 
 function App() {
   return (
@@ -18,9 +20,10 @@ function App() {
         >
           Learn React
         </a>
+        <HomePage/>
       </header>
     </div>
   );
-}
+} 
 
 export default App;
