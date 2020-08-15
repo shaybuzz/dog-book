@@ -1,12 +1,12 @@
 import React from 'react';
 
-function BreadPage(){
 
+function AboutPage() {
 
     return <div>
-        bread
+        about
     </div>
 
 }
 
-export default BreadPage
+export default AboutPage
