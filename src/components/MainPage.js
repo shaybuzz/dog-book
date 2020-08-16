@@ -7,6 +7,7 @@ import {
 import NavigationComp from './NavigationComp';
 import AboutPage from './AboutPage';
 import BreadsPage from './BreadsPage';
+import BreedPage from './BreedPage';
 
 function MainPage() {
 
