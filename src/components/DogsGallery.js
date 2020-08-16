@@ -17,8 +17,9 @@ function DogsGallery(pros) {
     return <div>
         Gallery:
         <p>curr relaod {reload}</p>
-       {dogsViews} 
-       
+        {dogsViews}
+
+
     </div>
     
 }
