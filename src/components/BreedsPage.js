@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 
 
 
-function BreadsPage() {
+function BreedsPage() {
     let history = useHistory();
 
     const [allBreeds, setAllBreeds] = React.useState([])
@@ -59,4 +59,4 @@ function BreadsPage() {
 
 }
 
-export default BreadsPage
+export default BreedsPage

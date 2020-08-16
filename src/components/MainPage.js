@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import NavigationComp from './NavigationComp';
 import AboutPage from './AboutPage';
-import BreadsPage from './BreadsPage';
+import BreedsPage from './BreedsPage';
 
 function MainPage() {
 
@@ -18,7 +18,7 @@ function MainPage() {
 
       <Switch>
         <Route path="/main">
-          <BreadsPage/>
+          <BreedsPage/>
         </Route>
         <Route  path="/about">
           <AboutPage/>
