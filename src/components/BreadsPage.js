@@ -42,12 +42,16 @@ function BreadsPage() {
         }
     }
 
+    function onBreedSelected(breed) {
+        console.log(`select ${breed}`)
+        
+    }
 
     return <div>
         all bread {needReload}
         <p><input type='text' onChange={filter} /></p>
         <Button onClick={reloadAll}>Change</Button>
-        <DogsGallery breeds={breeds} reload={needReload} />
+        <DogsGallery onSelected={onBreedSelected} breeds={breeds} reload={needReload} />
     </div>
 
 }

@@ -5,12 +5,12 @@ import DogView from './DogView';
 
 
 function DogsGallery(pros) {
-    const {breeds, reload} =  pros
+    const {breeds, reload, onSelected} =  pros
 
     let dogsViews = breeds.map(breed => toDogView(breed));
 
     function toDogView(breed) {
-        return <DogView  breed={breed} needReload={reload} image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToc5qlABWPX0gLRHAPLo_EvO2eMeIFmgdQ7kCA6Zq5z2VRzE87&s'/>// needReload 
+        return <DogView  onViewSelected={onSelected} breed={breed} needReload={reload} image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToc5qlABWPX0gLRHAPLo_EvO2eMeIFmgdQ7kCA6Zq5z2VRzE87&s'/>// needReload 
     }
 
 
