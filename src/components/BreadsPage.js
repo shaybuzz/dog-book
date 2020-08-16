@@ -2,9 +2,13 @@ import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 import { Button } from 'react-bootstrap';
 import DogsGallery from './DogsGallery';
+import { useHistory } from "react-router-dom";
+
 
 
 function BreadsPage() {
+    let history = useHistory();
+
     const [allBreeds, setAllBreeds] = React.useState([])
     const [breeds, setBreeds] = React.useState([])
     const [needReload, setReload] = React.useState(-1)
@@ -42,16 +46,15 @@ function BreadsPage() {
         }
     }
 
-    function onBreedSelected(breed) {
-        console.log(`select ${breed}`)
-        
+    function navigateToBreed(breed) {
+        history.push(`/breed/${breed}`)
     }
 
     return <div>
         all bread {needReload}
         <p><input type='text' onChange={filter} /></p>
         <Button onClick={reloadAll}>Change</Button>
-        <DogsGallery onSelected={onBreedSelected} breeds={breeds} reload={needReload} />
+        <DogsGallery onSelected={navigateToBreed} breeds={breeds} reload={needReload} />
     </div>
 
 }
